@@ -82,7 +82,7 @@ async def token_handler(client, message):
         ])
          
         await message.reply_photo(
-            image_url = "https://envs.sh/mDs.jpg"
+            image_url, = "https://envs.sh/mDs.jpg"
             caption=(
                 "Hi 👋 Welcome, Wanna intro...?\n\n"
                 "✳️ I can save posts from channels or groups where forwarding is off. I can download videos/audio from YT, INSTA, ... social platforms\n"
