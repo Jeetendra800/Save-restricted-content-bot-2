@@ -572,8 +572,8 @@ async def set_rename_command(user_id, custom_rename_tag):
 
 # Function to get the user's custom renaming preference
 def get_user_rename_preference(user_id):
-    # Retrieve the user's custom renaming tag if set, or default to 'Team SPY'
-    return user_rename_preferences.get(str(user_id), 'MYSERVER OFFICIAL')
+    # Retrieve the user's custom renaming tag if set, or default to 'Thank God'
+    return user_rename_preferences.get(str(user_id), 'Thank God')
 
 # Function to set custom caption preference
 async def set_caption_command(user_id, custom_caption):
