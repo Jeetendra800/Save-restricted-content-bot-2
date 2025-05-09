@@ -193,11 +193,25 @@ async def terms(client, message):
 @app.on_message(filters.command("plan") & filters.private)
 async def plan(client, message):
     plan_text = (
-        "> 💰 **Premium Price**:\n\n Starting from $2 or 200 INR accepted via **__Amazon Gift Card__** (terms and conditions apply).\n"
-        "📥 **Download Limit**: Users can download up to 100,000 files in a single batch command.\n"
-        "🛑 **Batch**: You will get two modes /bulk and /batch.\n"
-        "   - Users are advised to wait for the process to automatically cancel before proceeding with any downloads or uploads.\n\n"
-        "📜 **Terms and Conditions**: For further details and complete terms and conditions, please send /terms.\n"
+        "🌟 **Subscription Tiers** 🌟\n\n"
+        "**Basic Tier** (price:Rs 19/ 🇮🇳 10 days):\n"
+        "✅ 500GB Bandwidth\n"
+        "✅ 10 Concurrent Jobs\n"
+        "✅ Standard Support\n\n"
+        "**Pro Tier** (price:Rs 39/ 🇮🇳 20 days):\n"
+        "✅ 2TB Bandwidth\n"
+        "✅ 25 Concurrent Jobs\n"
+        "✅ /batch save 999 videos in one command\n"
+        "✅ Custom Branding\n\n"
+        "**Enterprise Tier** (price:Rs 59/ 🇮🇳 /month):\n"
+        "✅ Unlimited Bandwidth\n"
+        "✅ 50 Concurrent Jobs\n"
+        "✅ 24/7 Support\n"
+        "✅ Dedicated Resources\n\n"
+        "All plans include:\n"
+        "- Batch Processing\n"
+        "- Multi-format Support\n"
+        "- Cloud Integration\n"
     )
      
     buttons = InlineKeyboardMarkup(
@@ -212,11 +226,25 @@ async def plan(client, message):
 @app.on_callback_query(filters.regex("see_plan"))
 async def see_plan(client, callback_query):
     plan_text = (
-        "> 💰**Premium Price**\n\n Starting from $2 or 200 INR accepted via **__Amazon Gift Card__** (terms and conditions apply).\n"
-        "📥 **Download Limit**: Users can download up to 100,000 files in a single batch command.\n"
-        "🛑 **Batch**: You will get two modes /bulk and /batch.\n"
-        "   - Users are advised to wait for the process to automatically cancel before proceeding with any downloads or uploads.\n\n"
-        "📜 **Terms and Conditions**: For further details and complete terms and conditions, please send /terms or click See Terms👇\n"
+        "🌟 **Subscription Tiers** 🌟\n\n"
+        "**Basic Tier** (price:Rs 19/ 🇮🇳 10 days):\n"
+        "✅ 500GB Bandwidth\n"
+        "✅ 10 Concurrent Jobs\n"
+        "✅ Standard Support\n\n"
+        "**Pro Tier** (price:Rs 39/ 🇮🇳 20 days):\n"
+        "✅ 2TB Bandwidth\n"
+        "✅ 25 Concurrent Jobs\n"
+        "✅ /batch save 999 videos in single batch command\n"
+        "✅ Custom Branding\n\n"
+        "**Enterprise Tier** (price:Rs 39/ 🇮🇳 /month):\n"
+        "✅ Unlimited Bandwidth\n"
+        "✅ 50 Concurrent Jobs\n"
+        "✅ 24/7 Support\n"
+        "✅ Dedicated Resources\n\n"
+        "All plans include:\n"
+        "- Batch Processing\n"
+        "- Multi-format Support\n"
+        "- Cloud Integration\n"
     )
      
     buttons = InlineKeyboardMarkup(
