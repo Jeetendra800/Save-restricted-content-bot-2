@@ -601,7 +601,7 @@ async def settings_command(event):
         [Button.inline("Session Login", b'addsession'), Button.inline("Logout", b'logout')],
         [Button.inline("Set Thumbnail", b'setthumb'), Button.inline("Remove Thumbnail", b'remthumb')],
         [Button.inline("Upload Method", b'uploadmethod')],
-        [Button.url("Report Errors", "https://t.me/RAJPUTSERVER")]
+        [Button.url("Report Errors", "https://t.me/jaishesish8")]
     ]
     
     await gf.send_file(
@@ -878,7 +878,7 @@ def progress_callback(done, total, user_id):
     # Format the final output as needed
     final = (
         f"╭──────────────────╮\n"
-        f"│     **__SpyLib ⚡ Uploader__**       \n"
+        f"│     **__Gurjar ⚡ Uploader__**       \n"
         f"├──────────\n"
         f"│ {progress_bar}\n\n"
         f"│ **__Progress:__** {percent:.2f}%\n"
@@ -886,7 +886,7 @@ def progress_callback(done, total, user_id):
         f"│ **__Speed:__** {speed_mbps:.2f} Mbps\n"
         f"│ **__ETA:__** {remaining_time_min:.2f} min\n"
         f"╰──────────────────╯\n\n"
-        f"**__Powered by RAJPUTSERVER**"
+        f"**__Powered by GURJAR**"
     )
     
     # Update tracking variables for the user
