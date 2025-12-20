@@ -136,7 +136,7 @@ async def smart_handler(client, message):
         shortened_url = await get_shortened_url(deep_link)
         
         if not shortened_url:
-            await message.reply("😭 Can't generate Token? Contact 🍁 @Pre_contact_bot 🍁.")
+            await message.reply("😭 Can't generate Token? Contact 🍁 @Love_7586 🍁.")
             return
  
         button = InlineKeyboardMarkup(
