@@ -81,15 +81,19 @@ async def token_handler(client, message):
             [premium]    
         ])
          
-        await message.reply_photo(
-            image_url,
-            caption=(
-                "Hi 💢♻️ Welcome, Wanna intro...?\n\n"
-                "👻⚔ I can save posts from channels or groups where    FORWARDING is OFF💀.\n\n 🚀 bot can forward 500 video 📹 and pdf file 📂\n\n"
-                "🤞⚜  use to use Premium👑\n\n 🍁✨send post link of a public channel. For private channels, do /login.✨ \n\n Send /help to know more."
+                await message.reply_text(
+            text=(
+                "Hi 💢♻️ Welcome! 👋\n\n"
+                "👻⚔ I can save posts from channels or groups where FORWARDING is OFF💀.\n\n"
+                "🚀 Bot can forward 500 video 📹 and pdf file 📂\n\n"
+                "🤞⚜ Use Premium👑 for best experience.\n\n"
+                "🍁✨ Send post link of a public channel. For private channels, do /login.✨\n\n"
+                "Send /help to know more."
             ),
-            reply_markup=keyboard
-        )
+            reply_markup=keyboard,
+            disable_web_page_preview=True
+                )
+     
         return  
  
     param = message.command[1] if len(message.command) > 1 else None
