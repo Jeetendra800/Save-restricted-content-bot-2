@@ -221,6 +221,36 @@ async def plan(client, message):
         ]
     )
     await message.reply_text(plan_text, reply_markup=buttons)
+ # --- Start Command Code ---
+@app.on_message(filters.command("start") & filters.private)
+async def start(client, message):
+    join = await subscribe(client, message)
+    if join == 1:
+        return
+
+    start_text = (
+        f"Hello {message.from_user.mention}!\n\n"
+        "Main ek powerful **Content Saver Bot** hoon. ⚡\n\n"
+        "• Kisi bhi channel se content extract karne ke liye link bhejein.\n"
+        "• Bulk extraction ke liye **/batch** use karein.\n"
+        "• Saari details ke liye **/help** dabayein."
+    )
+    
+    buttons = InlineKeyboardMarkup(
+        [
+            [
+                InlineKeyboardButton("📢 Updates", url="https://t.me/team_spy_pro"),
+                InlineKeyboardButton("📋 Plans", callback_data="see_plan")
+            ],
+            [
+                InlineKeyboardButton("❓ Help & Commands", callback_data="help_next_0")
+            ]
+        ]
+    )
+    
+    await message.reply_text(start_text, reply_markup=buttons)
+# --------------------------
+
  
  
 @app.on_callback_query(filters.regex("see_plan"))
